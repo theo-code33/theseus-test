@@ -37,4 +37,15 @@ export default class Player {
         console.log(`${this._name} attacks ${player._name} and inflicts ${damage} damage`);
     }
 
+    status() {
+        console.log("--------------------------");
+        console.log(`Status of ${this._name}:`);
+        console.log(`Life: ${this._life}`);
+        console.log(`Strength: ${this._strength}`);
+        console.log(`Experience: ${this._experience}`);
+        console.log(`Weapons: ${this._weapons.length > 0 ? this._weapons : "No weapons"}`);
+        console.log(`Level: ${this._level}`);
+        console.log("--------------------------");
+    }
+    }
 }
