@@ -16,6 +16,7 @@ export default class Player {
         this._weapons = DEFAULT_WEAPONS;
         this._level = DEFAULT_LEVEL;
     }
+
     private _isDead(player: Player) {
         this._experience += EXPERIENCE_POINTS_PER_KILL;
         console.log(`${player._name} is dead!`);
@@ -47,5 +48,14 @@ export default class Player {
         console.log(`Level: ${this._level}`);
         console.log("--------------------------");
     }
+    heal() {
+        const regain = Math.floor(Math.random() * MAX_HEAL_REGAIN) + START_HEAL_REGAIN;
+        if(this._life + regain > this._initialLife) {
+            this._life = this._initialLife;
+        }else{
+            this._life += regain;
+        }
+        console.log(`${this._name} has regained ${regain} life points`);
+        
     }
 }
