@@ -1,5 +1,16 @@
-function sumOfTwoDigitsInTheTable(arr, target) {
-    /* TODO */
+function sumOfTwoDigitsInTheTable(numbersArray, target) {
+    let isSumOfTwoDigitsInTheTable = false
+
+    for (let indexFirstNumber = 0; indexFirstNumber < numbersArray.length; indexFirstNumber++) {
+        if(isSumOfTwoDigitsInTheTable) break
+        for ( let indexSecondNumber = indexFirstNumber + 1; indexSecondNumber < numbersArray.length; indexSecondNumber++) {
+            if (numbersArray[indexFirstNumber] + numbersArray[indexSecondNumber] === target) {
+                isSumOfTwoDigitsInTheTable = true
+                break
+            }
+        }
+    }
+    return isSumOfTwoDigitsInTheTable
 }
 
 const result1 = sumOfTwoDigitsInTheTable([1,8,3,6,9,2,5,12], 9) // true
