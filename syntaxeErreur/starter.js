@@ -1,5 +1,29 @@
 function isValidClosure(string) {
+    const elements = []
 
+    for (let i = 0; i < string.length; i++) {
+        let element = string[i]
+        if (element === "(" || element === "[" || element === "{") {
+            elements.push(element)
+        }
+
+        if(element.length === 0) return false
+
+        let startClosure
+        if (element === ")") {
+            startClosure = elements.pop()
+            if(startClosure == '{' || startClosure == '[') return false
+        }else if (element === "}") {
+            startClosure = elements.pop()
+            if(startClosure == '[' || startClosure == '(') return false
+        }
+        else if (element === "]") {
+            startClosure = elements.pop()
+            if(startClosure == '{' || startClosure == '(') return false
+        }
+    }
+
+    return elements.length === 0
 }
 
 const result1 = isValidClosure("{([{}])}") // true
