@@ -23,6 +23,7 @@ const player2 = new Mage("Sarah Doe")
  * Each attack inflicts damage on its opponent equivalent to the strength plus a random value
  * This random value is a number between 0 and 10.
  */
+console.log("Round 1");
 player1.attack(player2)
 player2.attack(player1)
 // show all attributes
@@ -35,6 +36,7 @@ player2.status()
  * The recovered value is a number between 5 and 15 life points
  * It is not possible to exceed the initial life bar value.
  */
+console.log("Round 2");
 player1.attack(player2)
 player2.heal()
 // show all attributes
@@ -47,6 +49,7 @@ player2.status()
  * The recovered value is a number between 5 and 15 life points
  * It is not possible to exceed the initial life bar value.
  */
+console.log("Round 3");
 player1.attack(player2)
 player2.attack(player1)
 // show all attributes
@@ -59,6 +62,7 @@ player2.status()
  * The other player then gains 80 experience points.
  * If their total experience reaches more than 100, they level up, and their experience resets to zero plus the remaining sum.
  */
+console.log("Round 4");
 player1.attack(player2)
 player2.attack(player1)
 // show all attributes
