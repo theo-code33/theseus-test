@@ -62,12 +62,8 @@ export default class Player {
     }
     heal() {
         const regain = Math.floor(Math.random() * MAX_HEAL_REGAIN) + START_HEAL_REGAIN;
-        if(this._life + regain > this._initialLife) {
-            this._life = this._initialLife;
-        }else{
-            this._life += regain;
-        }
+        const isSuperiorThanInitialLife = this._life + regain > this._initialLife;
+        this._life = isSuperiorThanInitialLife ? this._initialLife : this._life + regain;
         console.log(`${this._name} has regained ${regain} life points`);
-        
     }
 }
