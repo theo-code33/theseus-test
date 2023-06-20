@@ -45,6 +45,8 @@ function randomPeer(users) {
 
 console.log(randomPeer(users))
 
+module.exports = randomPeer
+
 /******* Users random peer ******/
 // Creation of random pairs of users
 // If the number of players is odd, there will be one group of 3 players.
