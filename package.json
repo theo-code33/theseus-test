@@ -1,0 +1,23 @@
+{
+  "name": "theseus-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theo-code33/theseus-test.git"
+  },
+  "keywords": [],
+  "author": "Théo Gillet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theo-code33/theseus-test/issues"
+  },
+  "homepage": "https://github.com/theo-code33/theseus-test#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
