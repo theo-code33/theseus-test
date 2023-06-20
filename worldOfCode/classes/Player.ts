@@ -1,3 +1,15 @@
+const DEFAULT_EXPERIENCE : number = 0;
+const DEFAULT_WEAPONS : string[] = [];
+const DEFAULT_LEVEL : number = 0;
+
+const EXPERIENCE_POINTS_PER_KILL : number = 80;
+const EXPERIENCE_TO_LEVEL_UP : number = 100;
+
+const MAX_ATTACK_DAMAGE_SUPPLEMENTARY : number = 10;
+
+const MAX_HEAL_REGAIN : number = 10;
+const START_HEAL_REGAIN : number = 5;
+
 export default class Player {
     private _life: number;
     private _initialLife: number;
