@@ -23,5 +23,7 @@ console.log("result2 : ", result2)
 console.log("result3 : ", result3)
 console.log("result4 : ", result4)
 
+module.exports = sumOfTwoDigitsInTheTable
+
 /******* Sum of two digits in the table ******/
 // If two numbers in the array add up to the target, then the function returns true; otherwise, it returns false.
